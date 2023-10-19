@@ -11,8 +11,14 @@ END = '\u001b[0m'
     else:
         print(f'{BLUE}{"  " * (12 - 2 * i)}{RED}{"  " * (4 + 2 * i)}{END}')'''
 
-
-plot_list = [[0 for i in range(10)] for i in range(10)]
+i = 15
+print(f'{RED}{"  " * i}{END}')
+print(f'{WHITE}{"  " * i}{END}')
+for r in range(3):
+    print(f'{BLUE}{"  " * i}{END}')
+print(f'{WHITE}{"  " * i}{END}')
+print(f'{RED}{"  " * i}{END}')
+'''plot_list = [[0 for i in range(10)] for i in range(10)]
 result = [0 for i in range(10)]
 
 for i in range(10):
@@ -54,4 +60,4 @@ list = []
 for number in file:
     list.append(float(number))
 file.close()
-print(list)
+print(list)'''
