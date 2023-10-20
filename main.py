@@ -5,22 +5,30 @@ BLUE = '\u001b[44m'
 WHITE = '\u001b[47m'
 END = '\u001b[0m'
 
-'''for i in range(6):
-    if i < 3:
-        print(f'{BLUE}{"  " * (2 * i + 2)}{WHITE}{"  " * (14 - 2 * i)}{END}')
-    else:
-        print(f'{BLUE}{"  " * (12 - 2 * i)}{RED}{"  " * (4 + 2 * i)}{END}')'''
-
-i = 15
+'''i = 15
 print(f'{RED}{"  " * i}{END}')
 print(f'{WHITE}{"  " * i}{END}')
 for r in range(3):
     print(f'{BLUE}{"  " * i}{END}')
 print(f'{WHITE}{"  " * i}{END}')
-print(f'{RED}{"  " * i}{END}')
+print(f'{RED}{"  " * i}{END}')'''
+
+plot_list = [[0 for i in range(10)] for i in range(10)]
+for i in range(10):
+    for j in range(10):
+        if j == 0 and i<=4:
+            plot_list[i][j] = "!"
+        if (j == 1 and i == 5) or (j == 2 and i == 6) or (j == 3 and i == 7) or (j == 4 and i == 8):
+            plot_list[i][j] = "!"
+        if j >=5 and i==9:
+            plot_list[i][j] = "!"    
+
+for i in range(10):
+    for j in range(10):
+        print(plot_list[i][j], end="")
+    print()
 '''plot_list = [[0 for i in range(10)] for i in range(10)]
 result = [0 for i in range(10)]
-
 for i in range(10):
     result[i] = i ** 3
 
@@ -53,9 +61,9 @@ print('\t0\t1 2 3 4 5 6 7 8 9')
 
 for i in range(10):
     #print(plot_list[i])
-    pass
+    pass'''
 
-file = open('sequence.txt', 'r')
+'''file = open('sequence.txt', 'r')
 list = []
 for number in file:
     list.append(float(number))
