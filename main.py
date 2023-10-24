@@ -6,6 +6,7 @@ WHITE = '\u001b[47m'
 END = '\u001b[0m'
 
 #task 1
+print("task 1")
 i = 15
 print(f'{RED}{"  " * i}{END}')
 print(f'{WHITE}{"  " * i}{END}')
@@ -15,6 +16,7 @@ print(f'{WHITE}{"  " * i}{END}')
 print(f'{RED}{"  " * i}{END}')
 
 #task 3
+print("task 3")
 plot_list = [[0 for i in range(10)] for i in range(10)]
 for i in range(10):
     for j in range(10):
@@ -32,7 +34,7 @@ for i in range(10):
 
 #task 4
 
-
+print("task 4")
 with open('sequence.txt', 'r') as g:
     file = g.readlines()
 colmen5 = []
@@ -45,5 +47,7 @@ for number in file:
         colmen5.append(i)
 bol = (len(colbol5)/len(file)*100)
 men = (len(colmen5)/len(file)*100)
+print(">5")
 print(f'{RED}{"  " * int(bol)}{WHITE}{"  " * int(100 -bol)}{END}')
+print(" >0 and <5")
 print(f'{RED}{"  " * int(men)}{WHITE}{"  " * int(100 -bol)}{END}')
