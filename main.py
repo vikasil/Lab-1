@@ -15,6 +15,24 @@ for r in range(3):
 print(f'{WHITE}{"  " * i}{END}')
 print(f'{RED}{"  " * i}{END}')
 
+#task2
+print("task 2")
+matrica = [[" " for i in range(70)] for i in range(3)]
+for i in range(3, 70,7):
+    matrica[0][i] ="*"
+    matrica[1][i+1] ="*"
+    matrica[1][i-1] ="*"
+    matrica[2][i+2] ="*"
+    matrica[2][i-2] ="*"
+    matrica[2][i+3] ="*"
+    matrica[2][i-3] ="*"
+for i in range(3):
+    for j in range(70):
+        print(matrica[i][j], end="")
+    print()
+
+
+
 #task 3
 print("task 3")
 plot_list = [[0 for i in range(10)] for i in range(10)]
