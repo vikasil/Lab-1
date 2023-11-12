@@ -1,4 +1,7 @@
 #test comment
+import time
+import os
+clear = lambda: os.system('cls')
 
 RED = '\u001b[41m'
 BLUE = '\u001b[44m'
@@ -69,3 +72,18 @@ print(">5")
 print(f'{RED}{"  " * int(bol)}{WHITE}{"  " * int(100 -bol)}{END}')
 print(" >0 and <5")
 print(f'{RED}{"  " * int(men)}{WHITE}{"  " * int(100 -bol)}{END}')
+
+print(" для запуска анимации введите любой симвл в консоль")
+f=input()
+while True:
+    print("это")
+    time.sleep(1)
+    clear()
+    print("анимация")
+    time.sleep(1)
+    clear()
+    print("честно")
+    time.sleep(1)
+    clear()
+
+    
